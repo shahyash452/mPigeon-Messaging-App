@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FinalLoginPage</string>
+    <string name="verify">Enter Phone Number</string>
+    <string name="welcome_otp_hello">mPigeon-Chat Application</string>
+    <string name="xxxxxxxxxx">Enter your Mobile Number</string>
+    <string name="enter_otp">OTP</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="did_not">Didnt Receive the OTP</string>
+    <string name="nameProf">Enter your Name </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
