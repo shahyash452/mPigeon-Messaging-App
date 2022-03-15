@@ -92,7 +92,7 @@ public class SetupProfileActivity extends AppCompatActivity {
                                                         @Override
                                                         public void onSuccess(Void unused) {
                                                             dialog.dismiss();
-                                                            Intent intent = new Intent(SetupProfileActivity.this, HelloWorld.class);
+                                                            Intent intent = new Intent(SetupProfileActivity.this, dashBoard.class);
                                                             startActivity(intent);
                                                             finish();
                                                         }

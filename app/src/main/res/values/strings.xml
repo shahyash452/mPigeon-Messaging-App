@@ -7,4 +7,6 @@
     <string name="resend_otp">Resend OTP</string>
     <string name="did_not">Didnt Receive the OTP</string>
     <string name="nameProf">Enter your Name </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

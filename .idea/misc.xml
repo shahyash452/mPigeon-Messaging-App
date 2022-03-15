@@ -4,12 +4,20 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/15- CS3006TX/AndroidStudioProjects/FinalLoginPage/app/src/main/res/drawable/roundcorner.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/15- CS3006TX/AndroidStudioProjects/FinalLoginPage/app/src/main/res/layout/activity_chat_detail.xml" value="0.25" />
         <entry key="..\:/Users/15- CS3006TX/AndroidStudioProjects/FinalLoginPage/app/src/main/res/layout/activity_dash_board.xml" value="0.25" />
         <entry key="..\:/Users/15- CS3006TX/AndroidStudioProjects/FinalLoginPage/app/src/main/res/layout/activity_hello_world.xml" value="0.25" />
         <entry key="..\:/Users/15- CS3006TX/AndroidStudioProjects/FinalLoginPage/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/15- CS3006TX/AndroidStudioProjects/FinalLoginPage/app/src/main/res/layout/activity_otp_verify.xml" value="0.25" />
         <entry key="..\:/Users/15- CS3006TX/AndroidStudioProjects/FinalLoginPage/app/src/main/res/layout/activity_setup_profile.xml" value="0.25" />
+        <entry key="..\:/Users/15- CS3006TX/AndroidStudioProjects/FinalLoginPage/app/src/main/res/layout/fragment_calls.xml" value="0.25" />
+        <entry key="..\:/Users/15- CS3006TX/AndroidStudioProjects/FinalLoginPage/app/src/main/res/layout/fragment_chats.xml" value="0.25" />
+        <entry key="..\:/Users/15- CS3006TX/AndroidStudioProjects/FinalLoginPage/app/src/main/res/layout/menu.xml" value="0.25" />
         <entry key="..\:/Users/15- CS3006TX/AndroidStudioProjects/FinalLoginPage/app/src/main/res/layout/roundcorner.xml" value="0.25" />
+        <entry key="..\:/Users/15- CS3006TX/AndroidStudioProjects/FinalLoginPage/app/src/main/res/layout/row_conversation.xml" value="0.25" />
+        <entry key="..\:/Users/15- CS3006TX/AndroidStudioProjects/FinalLoginPage/app/src/main/res/layout/sample_show_user.xml" value="0.25" />
+        <entry key="..\:/Users/15- CS3006TX/AndroidStudioProjects/FinalLoginPage/app/src/main/res/menu/menu.xml" value="0.25" />
+        <entry key="..\:/Users/15- CS3006TX/AndroidStudioProjects/FinalLoginPage/app/src/main/res/menu/topmenu.xml" value="0.25" />
       </map>
     </option>
   </component>

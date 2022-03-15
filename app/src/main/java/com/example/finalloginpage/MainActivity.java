@@ -28,8 +28,14 @@ public class MainActivity extends AppCompatActivity {
         number = findViewById(R.id.inputMobileNum);
         ccp.registerCarrierNumberEditText(number);
         getOtp = findViewById(R.id.getOtpBtn);
-        String checkNum = number.getText().toString();
 
+        auth=FirebaseAuth.getInstance();
+//        if(auth.getCurrentUser() !=null)
+//        {
+//            Intent intent =new Intent(MainActivity.this,dashBoard.class);
+//            startActivity(intent);
+//            finish();
+//        }
         getOtp.setOnClickListener(new View.OnClickListener() {
             @Override
 
@@ -38,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent(MainActivity.this, OtpVerify.class);
                     intent.putExtra("mobileNumber", ccp.getFullNumberWithPlus().replace(" ", ""));
                     startActivity(intent);
-
             }
 //            if(auth.getCurrentUser() != null){
 //                Intent intent = new Intent(MainActivity.this, HelloWorld.class);

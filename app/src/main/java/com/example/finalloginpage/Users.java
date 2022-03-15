@@ -16,7 +16,7 @@ public class Users
         this.profileImage = profileImage;
     }
 
-    public String getUid() {
+    public String getUid(String key) {
         return uid;
     }
 
