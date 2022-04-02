@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Projects_Android_Studio/Messaging-App-master/app/src/main/res/drawable/bg_reciever.xml" value="0.2385" />
+        <entry key="..\:/Projects_Android_Studio/Messaging-App-master/app/src/main/res/drawable/bg_sender.xml" value="0.2385" />
+        <entry key="..\:/Projects_Android_Studio/Messaging-App-master/app/src/main/res/drawable/bg_textmessage.xml" value="0.2385" />
+        <entry key="..\:/Projects_Android_Studio/Messaging-App-master/app/src/main/res/drawable/btn_bg_settings.xml" value="0.2385" />
+        <entry key="..\:/Projects_Android_Studio/Messaging-App-master/app/src/main/res/drawable/linear_bg_seetings.xml" value="0.2385" />
+        <entry key="..\:/Projects_Android_Studio/Messaging-App-master/app/src/main/res/drawable/roundcorner.xml" value="0.2385" />
+        <entry key="..\:/Projects_Android_Studio/Messaging-App-master/app/src/main/res/layout/activity_chat_detail.xml" value="0.264" />
+        <entry key="..\:/Projects_Android_Studio/Messaging-App-master/app/src/main/res/layout/activity_dash_board.xml" value="0.23229166666666667" />
+        <entry key="..\:/Projects_Android_Studio/Messaging-App-master/app/src/main/res/layout/activity_group_chat.xml" value="0.23229166666666667" />
+        <entry key="..\:/Projects_Android_Studio/Messaging-App-master/app/src/main/res/layout/activity_hello_world.xml" value="0.23229166666666667" />
+        <entry key="..\:/Projects_Android_Studio/Messaging-App-master/app/src/main/res/layout/activity_main.xml" value="0.23229166666666667" />
+        <entry key="..\:/Projects_Android_Studio/Messaging-App-master/app/src/main/res/layout/activity_settings.xml" value="0.23229166666666667" />
+        <entry key="..\:/Projects_Android_Studio/Messaging-App-master/app/src/main/res/layout/activity_setup_profile.xml" value="0.23229166666666667" />
+        <entry key="..\:/Projects_Android_Studio/Messaging-App-master/app/src/main/res/layout/fragment_calls.xml" value="0.23229166666666667" />
+        <entry key="..\:/Projects_Android_Studio/Messaging-App-master/app/src/main/res/layout/fragment_chats.xml" value="0.23229166666666667" />
+        <entry key="..\:/Projects_Android_Studio/Messaging-App-master/app/src/main/res/layout/fragment_status.xml" value="0.23229166666666667" />
+        <entry key="..\:/Projects_Android_Studio/Messaging-App-master/app/src/main/res/layout/sample_reciever.xml" value="0.4" />
+        <entry key="..\:/Projects_Android_Studio/Messaging-App-master/app/src/main/res/layout/sample_sender.xml" value="0.4" />
+        <entry key="..\:/Projects_Android_Studio/Messaging-App-master/app/src/main/res/layout/sample_show_user.xml" value="0.23229166666666667" />
+        <entry key="..\:/Projects_Android_Studio/Messaging-App-master/app/src/main/res/menu/pigeon_menu.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/15- CS3006TX/AndroidStudioProjects/FinalLoginPage/app/src/main/res/drawable/roundcorner.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/15- CS3006TX/AndroidStudioProjects/FinalLoginPage/app/src/main/res/layout/activity_chat_detail.xml" value="0.264" />
+        <entry key="..\:/Users/15- CS3006TX/AndroidStudioProjects/FinalLoginPage/app/src/main/res/layout/activity_dash_board.xml" value="0.25" />
+        <entry key="..\:/Users/15- CS3006TX/AndroidStudioProjects/FinalLoginPage/app/src/main/res/layout/activity_hello_world.xml" value="0.25" />
+        <entry key="..\:/Users/15- CS3006TX/AndroidStudioProjects/FinalLoginPage/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/15- CS3006TX/AndroidStudioProjects/FinalLoginPage/app/src/main/res/layout/activity_otp_verify.xml" value="0.25" />
+        <entry key="..\:/Users/15- CS3006TX/AndroidStudioProjects/FinalLoginPage/app/src/main/res/layout/activity_setup_profile.xml" value="0.25" />
+        <entry key="..\:/Users/15- CS3006TX/AndroidStudioProjects/FinalLoginPage/app/src/main/res/layout/fragment_calls.xml" value="0.25" />
+        <entry key="..\:/Users/15- CS3006TX/AndroidStudioProjects/FinalLoginPage/app/src/main/res/layout/fragment_chats.xml" value="0.25" />
+        <entry key="..\:/Users/15- CS3006TX/AndroidStudioProjects/FinalLoginPage/app/src/main/res/layout/menu.xml" value="0.25" />
+        <entry key="..\:/Users/15- CS3006TX/AndroidStudioProjects/FinalLoginPage/app/src/main/res/layout/roundcorner.xml" value="0.25" />
+        <entry key="..\:/Users/15- CS3006TX/AndroidStudioProjects/FinalLoginPage/app/src/main/res/layout/row_conversation.xml" value="0.25" />
+        <entry key="..\:/Users/15- CS3006TX/AndroidStudioProjects/FinalLoginPage/app/src/main/res/layout/sample_show_user.xml" value="0.25" />
+        <entry key="..\:/Users/15- CS3006TX/AndroidStudioProjects/FinalLoginPage/app/src/main/res/menu/menu.xml" value="0.25" />
+        <entry key="..\:/Users/15- CS3006TX/AndroidStudioProjects/FinalLoginPage/app/src/main/res/menu/topmenu.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
