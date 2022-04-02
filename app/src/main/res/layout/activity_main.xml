@@ -41,8 +41,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="24dp"
-                android:text="mPigeon messaging"
-                android:textColor="#000000"
+                android:text="mPigeon - Chat Application"
+                android:textColor="#8C000000"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -54,7 +54,7 @@
                 android:layout_marginTop="20dp"
                 android:text="@string/verify"
                 android:textColor="@color/black"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 />
 
             <LinearLayout
@@ -103,18 +103,33 @@
 
             </LinearLayout>
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/getOtpBtn"
                 android:layout_width="216dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="30dp"
-                android:backgroundTint="#5C64FD"
                 android:background="@drawable/roundcorner"
                 android:text="Click to Get OTP"
                 android:textColor="#FFFFFF"
                 app:cornerRadius="30dp" />
+
         </LinearLayout>
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/copyright_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:drawableLeft="@drawable/copyright"
+        android:drawablePadding="5dp"
+        android:text="mPigeon 2022"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

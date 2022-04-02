@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -30,12 +31,7 @@ public class MainActivity extends AppCompatActivity {
         getOtp = findViewById(R.id.getOtpBtn);
 
         auth=FirebaseAuth.getInstance();
-//        if(auth.getCurrentUser() !=null)
-//        {
-//            Intent intent =new Intent(MainActivity.this,dashBoard.class);
-//            startActivity(intent);
-//            finish();
-//        }
+
         getOtp.setOnClickListener(new View.OnClickListener() {
             @Override
 
@@ -45,11 +41,13 @@ public class MainActivity extends AppCompatActivity {
                     intent.putExtra("mobileNumber", ccp.getFullNumberWithPlus().replace(" ", ""));
                     startActivity(intent);
             }
-//            if(auth.getCurrentUser() != null){
-//                Intent intent = new Intent(MainActivity.this, HelloWorld.class);
-//                startActivity(intent);
-//            }
         });
 
+        if(auth.getCurrentUser() !=null)
+        {
+            Intent intent =new Intent(MainActivity.this,dashBoard.class);
+            startActivity(intent);
+            finish();
+        }
     }
 }

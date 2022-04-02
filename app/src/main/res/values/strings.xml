@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FinalLoginPage</string>
+    <string name="app_name">mPigeon</string>
     <string name="verify">Enter Phone Number</string>
     <string name="welcome_otp_hello">mPigeon-Chat Application</string>
     <string name="xxxxxxxxxx">Enter your Mobile Number</string>
@@ -9,4 +9,11 @@
     <string name="nameProf">Enter your Name </string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="userName_Hint">Yash Shah</string>
+    <string name="enter_your_message">Enter Your Message</string>
+    <string name="settings">Settings</string>
+    <string name="log_out">Log Out</string>
+    <string name="create_a_group">Create a Group</string>
+    <string name="user_name_settings">User Name :</string>
+    <string name="enter_your_name">Enter Your Name</string>
 </resources>

@@ -1,5 +1,6 @@
 package com.example.finalloginpage.Fragments;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -47,13 +48,16 @@ public class ChatsFragment extends Fragment {
         binding.rcv.setLayoutManager(linearLayoutManager);
 
         database.getReference().child("users").addValueEventListener(new ValueEventListener() {
+            @SuppressLint("NotifyDataSetChanged")
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-//                list.clear();
+                list.clear();
                 for (DataSnapshot dataSnapshot: snapshot.getChildren())
                 {
                     Users users =dataSnapshot.getValue(Users.class);
-                    users.getUid(dataSnapshot.getKey());
+                    if (users != null) {
+                        users.setUid(dataSnapshot.getKey());
+                    }
                     list.add(users);
                 }
                 usersAdapter.notifyDataSetChanged();

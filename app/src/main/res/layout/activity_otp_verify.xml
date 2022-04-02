@@ -201,7 +201,7 @@
 
         </LinearLayout>
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/VerifyButton"
             android:layout_width="218dp"
             android:layout_height="50dp"

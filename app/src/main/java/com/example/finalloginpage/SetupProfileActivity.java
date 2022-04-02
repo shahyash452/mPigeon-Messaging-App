@@ -36,6 +36,7 @@ public class SetupProfileActivity extends AppCompatActivity {
     ProgressDialog dialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setup_profile);
         image=findViewById(R.id.profile);
@@ -119,7 +120,7 @@ public class SetupProfileActivity extends AppCompatActivity {
                                 @Override
                                 public void onSuccess(Void unused) {
                                     dialog.dismiss();
-                                    Intent intent = new Intent(SetupProfileActivity.this, HelloWorld.class);
+                                    Intent intent = new Intent(SetupProfileActivity.this, dashBoard.class);
                                     startActivity(intent);
                                     finish();
                                 }

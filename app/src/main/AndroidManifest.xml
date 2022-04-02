@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalLoginPage">
         <activity
+            android:name=".Settings"
+            android:exported="false" />
+        <activity
+            android:name=".GroupChat"
+            android:exported="false" />
+        <activity
             android:name=".ChatDetailActivity"
             android:exported="false" />
         <activity
