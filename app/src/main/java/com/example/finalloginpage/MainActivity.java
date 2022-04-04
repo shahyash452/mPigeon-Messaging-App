@@ -32,16 +32,25 @@ public class MainActivity extends AppCompatActivity {
 
         auth=FirebaseAuth.getInstance();
 
-        getOtp.setOnClickListener(new View.OnClickListener() {
-            @Override
 
-            public void onClick(View view) {
 
-                    Intent intent = new Intent(MainActivity.this, OtpVerify.class);
-                    intent.putExtra("mobileNumber", ccp.getFullNumberWithPlus().replace(" ", ""));
-                    startActivity(intent);
-            }
-        });
+
+            getOtp.setOnClickListener(new View.OnClickListener() {
+                @Override
+
+
+                public void onClick(View view) {
+                    if(number != null && number.length() == 10) {
+                        Intent intent = new Intent(MainActivity.this, OtpVerify.class);
+                        intent.putExtra("mobileNumber", ccp.getFullNumberWithPlus().replace(" ", ""));
+                        startActivity(intent);
+                    }
+                    else{
+                        Toast.makeText(MainActivity.this, "Please Check Your Mobile Number !!!", Toast.LENGTH_SHORT).show();
+                    }
+                }
+            });
+
 
         if(auth.getCurrentUser() !=null)
         {

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#9E2B24E8"
+    android:background="#9EE3E3E3"
     tools:context=".Settings"
 
 
@@ -18,7 +18,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="12dp"
         app:srcCompat="@drawable/back_arrow_settings"
-        app:tint="#FFFFFF" />
+        app:tint="#03A9F4" />
 
     <LinearLayout
         android:id="@+id/user_detail_linear_layout"
@@ -33,8 +33,8 @@
 
         <com.mikhaellopez.circularimageview.CircularImageView
             android:id="@+id/user_profile_image_settings"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
             android:layout_alignParentStart="true"
             android:layout_marginStart="10dp"
             android:layout_marginLeft="10dp"
@@ -93,7 +93,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="3dp"
                 android:padding="5dp"
-                android:text="About : "
+                android:text="Status : "
                 android:textColor="#000000"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -118,9 +118,10 @@
             android:layout_marginTop="13dp"
             android:layout_marginRight="5dp"
             android:background="@drawable/btn_bg_settings"
+            android:backgroundTint="#03A9F4"
             android:padding="5dp"
             android:text="Save"
-            android:textColor="#002AFF" />
+            android:textColor="#FFFFFF" />
 
     </LinearLayout>
 
@@ -129,7 +130,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="3dp"
         android:background="@drawable/linear_bg_seetings"
         android:orientation="vertical"
         android:padding="40dp">

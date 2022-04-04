@@ -29,8 +29,10 @@ public class OtpVerify extends AppCompatActivity {
     Button verifyOtp;
     EditText n1, n2, n3, n4, n5, n6;
     String otpId;
+    Button resend;
     FirebaseAuth mAuth;
     String PhoneNumber;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,12 +48,21 @@ public class OtpVerify extends AppCompatActivity {
         n4 = findViewById(R.id.n4);
         n5 = findViewById(R.id.n5);
         n6 = findViewById(R.id.n6);
+        resend=findViewById(R.id.res_but);
         mAuth = FirebaseAuth.getInstance();
 
         PhoneNumber = getIntent().getStringExtra("mobileNumber").toString();
         mobileNumberShow.setText(String.format("%s", PhoneNumber));
         numberOtpMove1();
         initiateOtp();
+
+        resend.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                initiateOtp();
+                Toast.makeText(OtpVerify.this, "OTP sent successfully...", Toast.LENGTH_SHORT).show();
+            }
+        });
 
         verifyOtp.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -189,12 +189,13 @@
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/textView4"
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/res_but"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textSize="16sp"
+                android:background="#F3F8FA"
                 android:text="@string/resend_otp"
                 android:textStyle="bold"
                 android:textColor="@color/black" />
