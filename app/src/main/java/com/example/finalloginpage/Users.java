@@ -2,7 +2,16 @@ package com.example.finalloginpage;
 
 public class Users
 {
-    private String uid,name,phoneNumber,profileImage;
+    private String uid;
+    private String name;
+    private String phoneNumber;
+    private String profileImage;
+
+    public void setAbout(String about) {
+        this.about = about;
+    }
+
+    private String about;
 
     public Users()
     {
@@ -46,5 +55,9 @@ public class Users
 
     public void setProfileImage(String profileImage) {
         this.profileImage = profileImage;
+    }
+
+    public String getAbout() {
+        return about;
     }
 }

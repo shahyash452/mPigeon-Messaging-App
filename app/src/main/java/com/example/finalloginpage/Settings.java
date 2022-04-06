@@ -22,6 +22,7 @@ import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.squareup.picasso.Picasso;
 
+import java.util.HashMap;
 import java.util.Objects;
 
 public class Settings extends AppCompatActivity {
@@ -43,25 +44,46 @@ public class Settings extends AppCompatActivity {
         storage = FirebaseStorage.getInstance();
         database = FirebaseDatabase.getInstance();
 
-//        database.getReference()
-//                .child("users")
-//                .child(auth.getUid())
-//                .addListenerForSingleValueEvent(new ValueEventListener() {
-//                    @Override
-//                    public void onDataChange(@NonNull DataSnapshot snapshot) {
-//                        Users user = snapshot.getValue(Users.class);
-//                        Picasso.get()
-//                                .load(user.getProfileImage())
-//                                .placeholder(R.drawable.avatar)
-//                                .into(binding.userProfileImageSettings);
-//                    }
-//
-//                    @Override
-//                    public void onCancelled(@NonNull DatabaseError error) {
-//
-//                    }
-//                });
 
+
+        database.getReference()
+                .child("users")
+                .child(auth.getUid())
+                .addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        Users user = snapshot.getValue(Users.class);
+                        Picasso.get()
+                                .load(user.getProfileImage())
+                                .placeholder(R.drawable.avatar)
+                                .into(binding.userProfileImageSettings);
+
+                        binding.aboutEditTextSettings.setText(user.getAbout());
+                        binding.userNameEditTextSettings.setText(user.getName());
+
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
+
+
+        binding.saveBtnSettings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String status = binding.aboutEditTextSettings.getText().toString();
+                String userName = binding.userNameEditTextSettings.getText().toString();
+
+                HashMap<String, Object> obj = new HashMap<>();
+                obj.put("name", userName);
+                obj.put("about", status);
+
+                database.getReference().child("users").child(auth.getUid()).updateChildren(obj);
+                Toast.makeText(Settings.this, "Updated...", Toast.LENGTH_SHORT).show();
+            }
+        });
 
         binding.backArrowSettings.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,6 +93,8 @@ public class Settings extends AppCompatActivity {
                 finishAffinity();
             }
         });
+
+        //HELLO
 
         binding.plusSettings.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -100,7 +124,7 @@ public class Settings extends AppCompatActivity {
                             Toast.makeText(Settings.this, "Uploaded...", Toast.LENGTH_SHORT).show();
                             database.getReference()
                                     .child("users")
-                                    .child(FirebaseAuth.getInstance().getUid()).child("profilePicture")
+                                    .child(FirebaseAuth.getInstance().getUid()).child("profileImage")
                                     .setValue(uri.toString());
                         }
                     });

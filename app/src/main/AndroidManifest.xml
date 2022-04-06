@@ -4,11 +4,14 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/app_logo"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalLoginPage">
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
         <activity
             android:name=".Settings"
             android:exported="false" />
@@ -31,7 +34,7 @@
             android:name=".OtpVerify"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".intro"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
