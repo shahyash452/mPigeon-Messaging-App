@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.finalloginpage.Adapters.ChatAdapter;
 import com.example.finalloginpage.Models.MessageModel;
@@ -37,6 +38,20 @@ public class ChatDetailActivity extends AppCompatActivity {
         binding=ActivityChatDetailBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         Objects.requireNonNull(getSupportActionBar()).hide();
+        
+        binding.msgCall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(ChatDetailActivity.this, "Coming Soon...", Toast.LENGTH_SHORT).show();
+            }
+        });
+        
+        binding.msgMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(ChatDetailActivity.this, "Coming Soon...", Toast.LENGTH_SHORT).show();
+            }
+        });
 
         auth = FirebaseAuth.getInstance();
         database = FirebaseDatabase.getInstance();
