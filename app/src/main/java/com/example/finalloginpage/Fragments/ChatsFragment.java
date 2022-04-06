@@ -15,6 +15,7 @@ import com.example.finalloginpage.Adapters.UsersAdapter;
 import com.example.finalloginpage.R;
 import com.example.finalloginpage.Users;
 import com.example.finalloginpage.databinding.FragmentChatsBinding;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -58,7 +59,9 @@ public class ChatsFragment extends Fragment {
                     if (users != null) {
                         users.setUid(dataSnapshot.getKey());
                     }
+                    if (!users.getUid().equals(FirebaseAuth.getInstance().getUid())){
                     list.add(users);
+                }
                 }
                 usersAdapter.notifyDataSetChanged();
             }
